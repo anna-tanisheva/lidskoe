@@ -1,0 +1,248 @@
+html, body {
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    min-width: 320px;
+    max-width: 960px;
+    background-repeat: no-repeat;
+}
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.icon-position-top {
+  top: 32px!important;
+  left: 50%!important;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.change-bg {
+  background-color: #fcf1c4;
+}
+.fixed {
+  position: fixed;
+}
+.mobile-wrapper {
+  width: 100%;
+  height: 2850px;
+  font-size: 14px;
+}
+.close-button {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 13%;
+  height: 5%;
+  display: inline-block;
+}
+.close-button::before,
+.close-button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-left: 3px solid #644510;
+}
+.close-button::before {
+  top: 0;
+  left: 19px;
+  /*left: 22px;*/
+  transform: rotate(45deg);
+}
+.close-button::after {
+  right: -18px;
+  top: -31px;
+  /*top: -24px;*/
+  transform: rotate(-45deg);
+}
+.main-section {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  max-width: 960px;
+  min-width: 320px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.mobile-btn {
+  background-color: #fcf1c4;
+}
+.mobile-btn:active{
+  background-color: #644510;
+  color: #fff;
+  transition: 0.5s;
+}
+#main-section-1 {
+  background-image: url(../img/mobile-main-bg-1.jpg);
+}
+#main-section-2 {
+  background-image: url(../img/mobile-main-bg-2.jpg);
+}
+#main-section-3 {
+  background-image: url(../img/mobile-main-bg-3.jpg);
+}
+#main-section-4 {
+  background-image: url(../img/mobile-main-bg-4.jpg);
+}
+#main-section-5 {
+  background-image: url(../img/mobile-main-bg-5.jpg);
+  /*height: calc(20% + 120px);*/
+  height: 20%;
+}
+.mobile-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*padding: 147px 37px 53px;*/
+  padding: 46% 11% 17%;
+  background-color: #fcf1c4;
+  outline: 1px solid #d8cb96;
+  outline-offset: -10px;
+  z-index: 2;
+}
+#mobile-text-wrapper-3 {
+  padding: 43% 11% 17%;
+}
+.mobile-header {
+  margin-bottom: 11px;
+}
+.mobile-main-logo {
+  position: fixed;
+  top: 13px;
+  left: 18px;
+  width: 26.25%;
+  height: 14.65%;
+}
+.mobile-social-bar {
+  position: fixed;
+  top: 7.894736842105263%;
+  left: 82.5%;
+  width: 7.25%;
+  height: 15.701754%;
+  z-index: 1;
+}
+.toggle-social {
+  display: inline-block;
+  width: 100%;
+  height: 36%;
+  background-image: url(../img/mobile-social.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mobile-social-wrapper {
+  display: none;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  width: 100%;
+  height: 100%!important;
+  /*background-color: #fff;*/
+}
+
+.mobile-social-link {
+  float: none;
+  display: block;
+  width: 100%;
+  /*height: 30%!important;*/
+  margin: 0!important;
+  margin-bottom: 5px!important;
+  opacity: 1;
+}
+.mobile-logo-wrapper {
+  width: 30.25%;
+  height: 17.111111%;
+}
+.mobile-disclamer {
+  background-image: url(../img/mobile-disclamer.svg);
+  height: 13%;
+}
+.next,
+.prev {
+  position: absolute;
+  left: 50%;
+  margin-left: -12.37px;
+  width: 7.734375%;
+  /*height: 4.342105263157895%;*/
+  border: 2.5px solid #ffffff;
+  border-top: none;
+  border-right: none;
+}
+.next {
+  bottom: 17%;
+  transform: rotate(-45deg);
+}
+.prev {
+  top: 2.7%;
+  transform: rotate(135deg);
+}
+.next:active,
+.prev:active {
+  border-color: #fce5aa;
+}
+.text span {
+  font-weight: 700;
+}
+.mobile-logo-layer {
+  background-size: 70%;
+}
+#mobile-logo-1-wrapper {
+  top: 27.89473684210526%;
+  left: 18.125%;
+}
+#mobile-logo-2-wrapper {
+  top: 29%;
+  left: 64.1875%;
+}
+#mobile-logo-3-wrapper {
+  top: 23%;
+  left: 50%;
+}
+#mobile-logo-4-wrapper {
+  top: 29.5%;
+  left: 52%;
+}
+#mobile-logo-5-wrapper {
+  top: 27.5%;
+  left: 55.7%;
+}
+#mobile-logo-layer-1 {
+  background-image: url(../img/icon-1.svg);
+}
+#mobile-logo-layer-2 {
+  background-image: url(../img/icon-2.svg);
+}
+#mobile-logo-layer-3 {
+  background-image: url(../img/icon-3.svg);
+}
+#mobile-logo-layer-4 {
+  background-image: url(../img/icon-4.svg);
+}
+#mobile-logo-layer-5 {
+  background-image: url(../img/icon-5.svg);
+}
+
+
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+  .mobile-wrapper {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1140px) {
+  .mobile-wrapper {
+    font-size: 42px;
+  }
+}
