@@ -245,4 +245,7 @@ html * {
   .mobile-wrapper {
     font-size: 42px;
   }
+  .question {
+    font-size: 1.675em;
+  }
 }
