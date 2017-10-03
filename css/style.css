@@ -25,19 +25,6 @@ section {
     height: 100%;
     margin: 0;
 }
-/*.main-wrapper {
-  font-family: 'Open Sans';
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  background-image: url(../img/KV1.jpg);
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  min-height: 100%;
-  background-repeat: no-repeat;
-}*/
 #main-bg1,
 #main-bg2,
 #main-bg3 {
@@ -204,8 +191,6 @@ section {
   left: 0;
   width: 100%;
   height: 10%;
-  /*padding-top: 22px;*/
-  /*background-color: #2e2a27;*/
   background-image: url(../img/disclamer.svg);
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
@@ -249,7 +234,6 @@ section {
   left: 60px;
   width: 100%;
   height: 100%;
-  /*padding: 44px 52px;*/
   padding: 28px 52px;
   background-color: rgba(249, 232, 178, 0.8);
   outline: 1px solid #d8cb96;
@@ -323,17 +307,6 @@ section {
   cursor: pointer;
   z-index: 30;
 }
-/*.logo:hover {
-  transition: 0.5s;
-  box-shadow: 5px 5px 9px -2px rgba(0, 0, 0, 0.2), 0 0 12px 0 rgba(255, 255, 255, 0.7);
-}
-
-#logo-3:hover,
-#logo-5:hover {
-  transition: 0.5s;
-  box-shadow: -3px 5px 9px -2px rgba(0, 0, 0, 0.2);
-}*/
-
 .logo-layer {
   position: absolute;
   top: 5.83%;
@@ -369,7 +342,6 @@ section {
   font-weight: 700;
   font-size: 1.125em;
   color: #715524;
-  /*color: #b98c18;*/
 }
 .form-group {
   margin-bottom: 9px;
@@ -651,13 +623,8 @@ section {
     height: 42%;
   }
   #text-5 {
-    /*сегодня добавіла*/
-    /*height: 36%;*/
     height: 97px;
     margin-bottom: 13px;
-  }
-  .text-block {
-    /*padding: 8% 12%;*/
   }
   .header {
     margin-bottom: 6%;
@@ -673,7 +640,6 @@ section {
     left: -90%;
   }
   #text-5-block {
-    /*сегодня добавила*/
     padding: 30px 31px;
   }
   .form-field {
@@ -695,16 +661,12 @@ section {
     top: 84%;
   }
   #text-3-block {
-    /*сегодня добавила*/
     padding: 14px 22px;
   }
   #text-5-wrapper {
-    /*min-height: 56%;*/
     min-height: 57%;
   }
   #logo-5-text {
-    /*left: -372%;*/
-    /*сегодня добавіла*/
     left: -396%;
   }
   #text-4-block {
@@ -742,7 +704,6 @@ section {
   .text-wrapper {
     min-height: 41%;
   }
-  /*сегодня добавіла*/
   #logo-3-text {
     margin-left: -121px;
     margin-top: 28px;
@@ -751,7 +712,6 @@ section {
     min-height: 49%;
   }
   #text-3-block {
-    /*было padding: 17px 35px;*/
     padding: 17px 14px;
   }
   #text-3-block, #text-5-block {
@@ -809,9 +769,6 @@ section {
   .gazebo {
     top: -2%;
   }
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 12px;
   }
@@ -905,9 +862,6 @@ section {
 }
 /*1366x768*/
 @media (min-width: 1200px) and (max-width: 1366px) and (min-height: 500px) and (max-height: 768px) {
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 50px;
   }
@@ -965,7 +919,6 @@ section {
     height: 54.425926%;
   }
   #text-3-block .text {
-    /*overflow: visible;*/
     font-size: 1.15em;
   }
   #text-3-block {
@@ -1232,13 +1185,6 @@ section {
 
 /*1024х768*/
 @media (min-width: 1003px) and (max-width: 1024px) and (min-height: 599px) and (max-height: 768px)  {
-  /*.text {
-    height: 40%;
-    overflow-y: scroll;
-  }*/
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 8px;
   }
@@ -1333,9 +1279,6 @@ section {
 
 /*1440x900*/
 @media (min-width: 1419px) and (max-width: 1440px) and (min-height: 731px) and (max-height: 900px) {
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 15px;
   }
@@ -1446,9 +1389,6 @@ section {
 
 /*1280x800*/
 @media (min-width: 1259px) and (max-width: 1280px) and (min-height: 631px) and (max-height: 800px) {
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 15px;
   }
@@ -1466,8 +1406,6 @@ section {
     margin-bottom: 12px;
   }
   #text-1-wrapper {
-    /*top: 36%;
-    left: 25%;*/
     min-height: 46%;
   }
   #logo-1-text {
@@ -1564,9 +1502,6 @@ section {
 
 /*1680x1050*/
 @media (min-width: 1659px) and (max-width: 1680px) and (min-height: 881px) and (max-height: 1050px) {
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 15px;
   }
@@ -1650,7 +1585,6 @@ section {
   #header-4 {
     margin-bottom: 16px;
   }
-
   .form-field {
     width: 94%;
   }
@@ -1680,9 +1614,6 @@ section {
 
 /*1536x864*/
 @media (min-width: 1400px) and (max-width: 1536px) and (min-height: 790px) and (max-height: 864px) {
-  /*.disclamer {
-    background-image: url(../img/disclamer.svg);
-  }*/
   .bottle {
     top: 15px;
   }
@@ -1759,7 +1690,6 @@ section {
   #header-4 {
     margin-bottom: 16px;
   }
-
   .form-field {
     width: 94%;
   }
@@ -1800,8 +1730,6 @@ section {
     padding: 20px 5px 5px 20px;
   }
 }
-
-
 /*******************************************************************************/
 .check {
   position: absolute;
@@ -1824,9 +1752,6 @@ section {
   width: 100%;
   height: 100%;
 }
-/*@media (max-width: 960px) {
-
-}*/
 .question {
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
