@@ -135,43 +135,43 @@ $('.close-button').on('click', function(evt) {
 
 //обработка формы
 
-$(window).on('load', function () {
-	$.ajax ({
-		url: './data.php',
-		type: 'GET',
-		success: function(data){
-			if (data && data.indexOf('На жаль, усе месцы на бліжэйшую экскурсію забраніраваны.') !== -1) {
-        $('#mobile-text-5').html(data);
-        $('#mobile-text-wrapper-5 form').remove()
-			} else {
-				return;
-			}
-		}
-	});
-})
-
-$('.form-button').on('click', function (evt) {
-	evt.preventDefault();
-	if (!$('.form-group').hasClass('has-danger') &&
-	 !$('.form-group').hasClass('has-error') &&
-	  $('.form-field').val() !== '') {
-			$.ajax ({
-				url: './data.php',
-				type: 'POST',
-				data: ({name: $('#inputName').val(),
-								phone: $('#phone').val(),
-							email: $('#inputEmail').val()}),
-				success: function(data){
-					if (data) {
-						$('#mobile-text-5').html(data);
-						$('#mobile-text-wrapper-5 form').remove()
-					} else {
-						$('#mobile-text-5').text('Віншуем! Ваша рэгістрація прайшла паспяхова. Чакайце запрашэнне на электронную пошту.');
-						$('form').remove();
-					}
-				}
-			});
-	} else {
-		$('#text-5').text('Проізошла какая-то ошібка');
-	}
-})
+// $(window).on('load', function () {
+// 	$.ajax ({
+// 		url: './data.php',
+// 		type: 'GET',
+// 		success: function(data){
+// 			if (data && data.indexOf('На жаль, усе месцы на бліжэйшую экскурсію забраніраваны.') !== -1) {
+//         $('#mobile-text-5').html(data);
+//         $('#mobile-text-wrapper-5 form').remove()
+// 			} else {
+// 				return;
+// 			}
+// 		}
+// 	});
+// })
+//
+// $('.form-button').on('click', function (evt) {
+// 	evt.preventDefault();
+// 	if (!$('.form-group').hasClass('has-danger') &&
+// 	 !$('.form-group').hasClass('has-error') &&
+// 	  $('.form-field').val() !== '') {
+// 			$.ajax ({
+// 				url: './data.php',
+// 				type: 'POST',
+// 				data: ({name: $('#inputName').val(),
+// 								phone: $('#phone').val(),
+// 							email: $('#inputEmail').val()}),
+// 				success: function(data){
+// 					if (data) {
+// 						$('#mobile-text-5').html(data);
+// 						$('#mobile-text-wrapper-5 form').remove()
+// 					} else {
+// 						$('#mobile-text-5').text('Віншуем! Ваша рэгістрація прайшла паспяхова. Чакайце запрашэнне на электронную пошту.');
+// 						$('form').remove();
+// 					}
+// 				}
+// 			});
+// 	} else {
+// 		$('#text-5').text('Проізошла какая-то ошібка');
+// 	}
+// })
