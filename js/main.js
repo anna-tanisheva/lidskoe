@@ -318,48 +318,48 @@ tl7.to($('.logo'), 1,  {css:{boxShadow: "0 0 15px 5px rgba(255, 255, 255, 0.7)"}
 
 //обработка формы
 
-$(window).on('load', function () {
-	$.ajax ({
-		url: './data.php',
-		type: 'GET',
-		success: function(data){
-			if (data && data.indexOf('На жаль, усе месцы на бліжэйшую экскурсію забраніраваны.') !== -1) {
-				$('#text-5').html(data);
-				$('#text-5-block form').remove()
-			} else {
-				return;
-			}
-		}
-	});
-})
+// $(window).on('load', function () {
+// 	$.ajax ({
+// 		url: './data.php',
+// 		type: 'GET',
+// 		success: function(data){
+// 			if (data && data.indexOf('На жаль, усе месцы на бліжэйшую экскурсію забраніраваны.') !== -1) {
+// 				$('#text-5').html(data);
+// 				$('#text-5-block form').remove()
+// 			} else {
+// 				return;
+// 			}
+// 		}
+// 	});
+// })
 
-$('.form-button').on('click', function (evt) {
-	evt.preventDefault();
-	if (!$('.form-group').hasClass('has-danger') &&
-		!$('.form-group').hasClass('has-error') &&
-		$('.form-field').val() !== '') {
-			$.ajax ({
-				url: './data.php',
-				type: 'POST',
-				data: ({name: $('#inputName').val(),
-								phone: $('#phone').val(),
-							email: $('#inputEmail').val()}),
-				success: function(data){
-					if (data && data.indexOf('На жаль, усе месцы на бліжэйшую экскурсію забраніраваны. Рэгістрацыя на наступную экскурсію, якая адбудзецца 26.08.2017, , плануецца ўв блIжэйшы час. Колькасць месцаў абмежавана!') !== -1) {
-						$('#text-5').html(data);
-						$('#text-5-block form').remove()
-					} else if (data && data.indexOf("<font size='1'>") !== -1) {
-						$('#text-5').text('Что-то пошло не так, попробуйте перезагрузіть страніцу і зарегістріроваться еще раз');
-				  } else {
-						$('#text-5').text('Віншуем! Ваша рэгістрація прайшла паспяхова. Чакайце запрашэнне на электронную пошту.');
-						$('#text-5-block form').remove();
-					}
-				}
-			});
-	} else {
-		evt.preventDefault();
-	}
-})
+// $('.form-button').on('click', function (evt) {
+// 	evt.preventDefault();
+// 	if (!$('.form-group').hasClass('has-danger') &&
+// 		!$('.form-group').hasClass('has-error') &&
+// 		$('.form-field').val() !== '') {
+// 			$.ajax ({
+// 				url: './data.php',
+// 				type: 'POST',
+// 				data: ({name: $('#inputName').val(),
+// 								phone: $('#phone').val(),
+// 							email: $('#inputEmail').val()}),
+// 				success: function(data){
+// 					if (data && data.indexOf('На жаль, усе месцы на бліжэйшую экскурсію забраніраваны. Рэгістрацыя на наступную экскурсію, якая адбудзецца 26.08.2017, , плануецца ўв блIжэйшы час. Колькасць месцаў абмежавана!') !== -1) {
+// 						$('#text-5').html(data);
+// 						$('#text-5-block form').remove()
+// 					} else if (data && data.indexOf("<font size='1'>") !== -1) {
+// 						$('#text-5').text('Что-то пошло не так, попробуйте перезагрузіть страніцу і зарегістріроваться еще раз');
+// 				  } else {
+// 						$('#text-5').text('Віншуем! Ваша рэгістрація прайшла паспяхова. Чакайце запрашэнне на электронную пошту.');
+// 						$('#text-5-block form').remove();
+// 					}
+// 				}
+// 			});
+// 	} else {
+// 		evt.preventDefault();
+// 	}
+// })
 
 $('.form-field').on('blur', function () {
 	var heightBlock = $('#header-5').height() +
